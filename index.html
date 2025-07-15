@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>
+      I’ve been having trouble distinguishing between functions and methods.
+      Rather than staying stuck, I decided to look for questions and real-life
+      scenarios to help me understand them better. Below are some of the
+      questions I explored and how I approached solving them.
+    </h1>
+
+    <script>
+      // // 1. Write a function called greetUser that logs “Welcome!” to the console.
+      //   let greetUser = () => {
+      //     console.log("Welcome!");
+      //   };
+      //   greetUser();
+
+      // // 2. Create an object user with a method sayName() that logs “My name is John”. Call the method.
+
+      //   let user = {
+      //     sayName: function () {
+      //       console.log("My name is John");
+      //     },
+      //   };
+      //   user.sayName();
+
+      // // 3. Given let word = "Developer", use the charAt() method to get the third character.
+      //   let word = "Developer";
+      //   console.log(word.charAt(2));
+
+      // //4. Convert the string "javaScript" to uppercase using a method.
+
+      //   let input = "javascript";
+      //   //   alert(input.toUpperCase());
+      //   //OR
+      //   console.log(input.toUpperCase());
+
+      // //5.Write a function that accepts a name as a parameter and returns "Hello, [name]!".
+
+      //   let greet = (name) => {
+      //     return console.log(`Hello, ${name}`);
+      //   };
+      //   let userName = prompt("Enter your Username");
+      //   console.log(greet(userName));
+
+      // //6.Create a method inside an object that adds two numbers and returns the result.
+      //   let sumOfTwoNums = {
+      //     add: function (a, b) {
+      //       return a + b;
+      //     },
+      //   };
+
+      //   console.log(sumOfTwoNums.add(9, 10));
+
+      // //7.Use the .length property and .toUpperCase() method together to log the length and uppercase version of "frontend"
+      //   let value = "frontend";
+      //   console.log(value.length);
+      //   console.log(value.toUpperCase());
+
+      // //8. Write a function getInitials(fullName) that takes a full name and returns the initials using string methods. Example: "Jane Doe" → "J.D."
+
+      //   function getInitials(fullName) {
+      //     let words = fullName.split(" ");
+      //     let initials = "";
+      //     for (let i = 0; i < words.length; i++) {
+      //       initials = initials + words[i][0].toUpperCase() + ".";
+      //     }
+      //     return initials;
+      //   }
+
+      //   console.log(getInitials("Jane Doe"));
+      //   console.log(getInitials("Emmanuel Keziah"));
+
+      //OR Using Mapping
+      function getInitials(fullName) {
+        let words = fullName.split(" ");
+
+        let initials = words.map((word) => word[0].toUpperCase());
+
+        return initials.join(".") + ".";
+      }
+
+      console.log(getInitials("Jay Ding Dong"));
+      console.log(getInitials("Sammy Cole"));
+    </script>
+  </body>
+</html>
