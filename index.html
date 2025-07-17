@@ -130,26 +130,193 @@
 
       // //13. Given let prices = [10, 25, 40], use join() to convert it into a string: "10, 25, 40"
 
-      let prices = [10, 25, 40];
-      console.log(prices.join(", "));
+      // let prices = [10, 25, 40];
+      // console.log(prices.join(", "));
 
       // // 14.Write a function reverseText(text) that returns the reversed version of a string using .split(), .reverse(), and .join() methods.
-      let reverseText = (text) => {
-        return text.split("").reverse().join("");
-      };
-      console.log(reverseText("Testing words"));
+      // let reverseText = (text) => {
+      //   return text.split("").reverse().join("");
+      // };
+      // console.log(reverseText("Testing words"));
 
       // //15.Create a taskManager object with methods to addTask(taskName) and listTasks() using an internal array. Let it store and display tasks.
+      // let taskManager = {
+      //   tasks: [],
+
+      //   addTask: function (taskName) {
+      //     this.tasks.push(taskName);
+      //   },
+
+      //   listTasks: function () {
+      //     console.log("Enter your tasks:");
+      //     this.tasks.forEach((task, index) => {
+      //       console.log(`${index + 1}. ${task}`);
+      //     });
+      //   },
+      // };
+
+      // taskManager.addTask("Wash Plates");
+      // taskManager.addTask("Visit the zoo");
+      // taskManager.addTask("Read a novel");
+
+      // taskManager.listTasks();
 
       // //16. Build a function formatPhoneNumber(number) that takes "08012345678" and returns "080-1234-5678" using slice() method.
 
+      // function formatPhoneNumber(number) {
+      //   let part1 = number.slice(0, 3);
+      //   let part2 = number.slice(3, 7);
+      //   let part3 = number.slice(7);
+
+      //   return `${part1}-${part2}-${part3}`;
+      // }
+      // console.log(formatPhoneNumber("08012345678"));
+
       // //17.Given a paragraph string, write a function countWords() that returns how many words are in the text. (Hint: split by spaces)
+      // function countWords(text) {
+      //   let wordInText = text.trim().split(" ");
+      //   return wordInText.length;
+      // }
+      // console.log(countWords("Javascript seems so complicated"));
 
       // //18. Simulate a sign-up system where an object auth has a register(user) method that logs “[username] registered successfully.”
+      // let authenticationMethod = {
+      //   register: function (user) {
+      //     console.log(`${user.username} registered successfully`);
+      //   },
+      // };
+
+      // const enterUsername = prompt("Enter your username");
+      // const newUser = { username: enterUsername };
+
+      // authenticationMethod.register(newUser);
 
       // //19. Write a method in a cart object that calculates the total price of items given as an array of item prices.
 
       // //20.Write a function isPalindrome(word) that checks if a word reads the same backward. Use .split(), .reverse(), and .join() to help.
+
+      // function isPalindrome(word) {
+      //   let palindrome = word.split("").reverse().join("");
+      //   if (word === palindrome) {
+      //     console.log("Yes, This is a palindrome");
+      //   } else {
+      //     console.log("No, This is not a palindrome");
+      //   }
+      // }
+
+      // isPalindrome("mallam");
+      // isPalindrome("madam");
+      // isPalindrome("shazam");
+
+      // // STRING METHODS:
+      // // 1. Create a variable greeting = " Hello World! ". Use .trim() to remove the extra spaces and print it.
+      // let greeting = " Hello World! ";
+      // console.log(greeting);
+      // console.log(greeting.trim());
+
+      // //2. Change "JavaScript" to uppercase.
+      // let lang = "JavaScript";
+      // console.log(lang.toLowerCase());
+
+      // //3. Change "HTML" to lowercase.
+      // let lang = "HTML";
+      // console.log(lang.toLowerCase());
+
+      // //4.Replace "cat" with "dog" in the string "My cat is cute".
+      // let animal = "cat";
+      // console.log(animal);
+      // console.log(animal.replace("cat", "dog"));
+
+      // //5. Check if "frontend" includes "end".
+      // let learningTrack = "frontend";
+      // console.log(learningTrack.includes("end"));
+      // console.log(learningTrack.includes("fend"));
+
+      // //6. Extract "Script" from "JavaScript" using .slice().
+      // let lang = "JavaScript";
+      // let newScript = lang.slice(4, 10);
+      // console.log(newScript);
+
+      // //7. Get the first character of "Python" using .charAt().
+      // let pyn = "python";
+      // console.log(pyn.charAt(0));
+
+      // //8. Find the index of "fun" in "Coding is fun".
+      // let sentence = "Coding is fun";
+      // console.log(sentence.indexOf("fun"));
+
+      // //9. Use .split(" ") to turn "I love JavaScript" into an array.
+      // let arrayWord = "I love JavaScript";
+      // console.log(arrayWord.split(""));
+
+      // //10. Check if "awesome" starts with "awe" and ends with "some".
+      // let compliment = "awesome";
+      // if (compliment.startsWith("awe") && compliment.endsWith("some")) {
+      //   console.log("Yes, It does!");
+      // } else {
+      //   console.log("No, it doesn't");
+      // }
+
+      // //11. Create a variable word = " JavaScript ". Convert it to lowercase, trim it, and replace "javascript" with "TypeScript".
+      // let word = " JavaScript ";
+      // let newWord = word.trim("").toLowerCase().replace("java", "Type");
+      // console.log(newWord);
+
+      // //12. Write a function shout(message) that returns the message in all uppercase with an exclamation mark at the end.
+      // let shout = (message) => {
+      //   return message.toUpperCase() + "!";
+      // };
+      // console.log(shout("Hello World"));
+
+      // //13. Write a function formatName(name) that returns the name with only the first letter capitalized.
+      // let formatName = (name) => {
+      //   return name.charAt(0).toUpperCase() + name.slice(1);
+      // };
+      // console.log(formatName("frontend mentor"));
+      // console.log(formatName("life is beautiful"));
+
+      // //14. Write a function countWords(text) that returns the number of words in a sentence.
+      // let countWords = (text) => {
+      //   return text.trim().split(" ").length;
+      // };
+
+      // console.log(countWords("Peace is like an ocean"));
+
+      // //15. Write a function hideEmail(email) that hides part of an email like: john****@gmail.com
+      // let hideEmail = (email) => {
+      //   let [name, domain] = email.split("@");
+      //   let visible = name.slice(0, 4);
+      //   let hidden = name.length > 4 ? "*".repeat(name.length - 4) : " ";
+      //   return (visible + hidden + "@" + domain).toLowerCase();
+      // };
+      // console.log(hideEmail("KEzzybaby@gmail.com"));
+      // console.log(hideEmail("ToyOSi112@gmail.com"));
+
+      // //16. Write a function formatPhoneNumber("08012345678") that returns "080-1234-5678"
+      // let formatPhoneNumber = () => {
+      // let number = "08012345678";
+      // return (
+      //   number.slice(0, 3) +
+      //   "-" +
+      //     number.slice(3, 7) +
+      //     "-" +
+      //     number.slice(7, 11)
+      //   );
+      // };
+      // console.log(formatPhoneNumber());
+
+      // //17. Use Chain .trim(), .toLowerCase(), .replace() to clean and update a messy string.
+      let messyString = (words) => {
+        let string1 = " This is not a phrase";
+        let string2 = "thIs is A GreaT dAy ";
+        let string3 = "Let the bat out of the cat";
+        // return words;
+      };
+      console.log(messyString(`${String1} + ${string2}`));
+
+      // //18. Get the last character of a string using .charAt(string.length - 1).
+
+      // //19. Write a function extractDomain("https://www.example.com") that returns "example.com"
     </script>
   </body>
 </html>
