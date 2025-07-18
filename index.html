@@ -283,12 +283,7 @@
       // console.log(countWords("Peace is like an ocean"));
 
       // //15. Write a function hideEmail(email) that hides part of an email like: john****@gmail.com
-      // let hideEmail = (email) => {
-      //   let [name, domain] = email.split("@");
-      //   let visible = name.slice(0, 4);
-      //   let hidden = name.length > 4 ? "*".repeat(name.length - 4) : " ";
-      //   return (visible + hidden + "@" + domain).toLowerCase();
-      // };
+      //
       // console.log(hideEmail("KEzzybaby@gmail.com"));
       // console.log(hideEmail("ToyOSi112@gmail.com"));
 
@@ -305,18 +300,40 @@
       // };
       // console.log(formatPhoneNumber());
 
-      // //17. Use Chain .trim(), .toLowerCase(), .replace() to clean and update a messy string.
-      let messyString = (words) => {
-        let string1 = " This is not a phrase";
-        let string2 = "thIs is A GreaT dAy ";
-        let string3 = "Let the bat out of the cat";
-        // return words;
-      };
-      console.log(messyString(`${String1} + ${string2}`));
+      // //17. Chain .trim(), .toLowerCase(), .replace() to clean and update a messy string.
+      // let messyString = () => {
+      //   let string1 = " This is not a phrase".trim();
+      //   let string2 = "thIs is A GreaT dAy ".trim().toLowerCase();
+      //   let string3 = "Let the bat out of the hat";
+
+      // let cleanup2 = string2[0].toUpperCase() + string2.slice(1);
+      //   let cleanup3 = string3[0].toLowerCase() + string3.slice(1);
+      //   let cleanup4 = cleanup3.replace("bat", "cat");
+      //   let cleanup5 = cleanup4.replace("hat", "bag");
+
+      //   return string1 + ", " + cleanup5 + ". " + cleanup2;
+      // };
+      // console.log(messyString());
 
       // //18. Get the last character of a string using .charAt(string.length - 1).
+      let sentence = "This is not a compliment";
+      function confirmSentence(sentence) {
+        return sentence.charAt(sentence.length - 1);
+      }
+      console.log(confirmSentence(sentence));
 
       // //19. Write a function extractDomain("https://www.example.com") that returns "example.com"
+      function extractDomain(url) {
+        let urlResult = url
+          .replace("https://", "")
+          .replace("http://", "")
+          .replace("www.", "");
+
+        return urlResult;
+      }
+
+      console.log(extractDomain("https://www.example.com"));
+      console.log(extractDomain("http://www.w3schools.com"));
     </script>
   </body>
 </html>
